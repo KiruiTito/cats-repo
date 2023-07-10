@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cat Facts</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .cat-facts {
+      width: 50%;
+    }
+
+    .cat-fact-card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .form {
+      width: 50%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cat Facts</h1>
+
+  <div class="container">
+    <div class="cat-facts"></div>
+
+    <form class="form">
+      <h2>Add a New Cat Fact</h2>
+      <label for="fact-text">Fact Text:</label>
+      <input type="text" id="fact-text" required>
+      <br>
+      <label for="fact-type">Fact Type:</label>
+      <input type="text" id="fact-type" required>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
